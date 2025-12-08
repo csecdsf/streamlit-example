@@ -92,6 +92,11 @@ if QF < 2300:
     st.write(' - Une carte culture du surplus si le montant maximum des cartes cadeaux précédentes est atteint')
     st.write('')
     st.write('Si vous disposez de plus de l\'enveloppe par défaut de 196€, pour en bénéficier, veuillez apportez votre justificatif (Relevé d\'impots de l\'année précédente) à une permanence de votre CSE ET veuillez ajouter vos éventuels enfants comme ayant droit dans Swile.')
+else: 
+    st.subheader('Ceci est le montant total auquel vous avez droit, il inclut')
+    st.write(' - Les demandes de remboursement pour un maximum de 196€')
+    st.write(' - Une carte cadeau du montant de l\'enveloppe auquel est soustrait le montant déjà demandé en remboursement (ici aussi il y a un maximum de 196€)')
+
 
 
 # In[ ]:
