@@ -55,6 +55,7 @@ st.write(f'Votre Quotient Familial {QF:,d} .')
 
 st.write('')
 
+# Afficher l'enveloppe 
 if QF > 2300:
     st.subheader('Vous avez l\'enveloppe standard de 196 euros.')
     st.write('Pas besoin de venir nous voir :) ')
@@ -82,6 +83,15 @@ else:
     st.write('Vous avez une enveloppe bonifiée.')
     st.write('Vous pouvez venir nous voir!! :) ')
 
+# Afficher un message d'explication si l'utilisateur dépasse l'enveloppe
+if QF < 2300:
+    st.subheader('Ceci est le montant total auquel vous avez droit, il inclut')
+    st.write(' - Les demandes de remboursement pour un maximum de 196€')
+    st.write(' - Une carte cadeau du montant de l\'enveloppe auquel est soustrait le montant déjà demandé en remboursement (ici aussi il y a un maximum de 196€)')
+    st.write(' - Une ou plusieurs carte enfant du surplus si le montant maximum est atteint pour la carte cadeau (maximum de 196€ par enfant)')
+    st.write(' - Une carte culture du surplus si le montant maximum des cartes cadeaux précédentes est atteint')
+    st.write('')
+    st.write('Si vous disposez de plus de l\'enveloppe par défaut de 196€, pour en bénéficier, veuillez apportez votre justificatif (Relevé d\'impots de l\'année précédente) à une permanence de votre CSE ET veuillez ajouter vos éventuels enfants comme ayant droit dans Swile.')
 
 
 # In[ ]:
