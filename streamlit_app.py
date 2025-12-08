@@ -95,7 +95,7 @@ if QF < 2300:
 else: 
     st.subheader('Ceci est le montant total auquel vous avez droit, il inclut')
     st.write(' - Les demandes de remboursement pour un maximum de 196€')
-    st.write(' - Une carte cadeau du montant de l\'enveloppe auquel est soustrait le montant déjà demandé en remboursement (ici aussi il y a un maximum de 196€)')
+    st.write(' - Une carte cadeau du montant de l\'enveloppe, à savoir 196€, auquel est soustrait le montant déjà demandé en remboursement.')
 
 
 
