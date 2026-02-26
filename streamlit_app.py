@@ -15,7 +15,7 @@ import time
 df = pd.DataFrame()
 
 
-st.title('CSE Calcul ASC 2025')
+st.title('CSE Calcul ASC 2026')
 st.write('')
 
 # add some space between photo and instructions
@@ -34,7 +34,7 @@ placeholder_s = st.empty()
 
 # have user input the amount they have for each coin
 
-userRFF = placeholder_c.number_input('Revenu fiscal de reference 2025 (sur les revenus 2024) en euros: ', min_value= 0, value=100000)
+userRFF = placeholder_c.number_input('Revenu fiscal de reference 2026 (sur les revenus 2025) en euros: ', min_value= 0, value=100000)
 userNBPart = placeholder_s.number_input('Nombre de parts ', min_value= 1.,format="%.2f", step=0.5)
 
 
@@ -57,7 +57,7 @@ st.write('')
 
 # Afficher l'enveloppe 
 if QF > 2300:
-    st.subheader('Vous avez l\'enveloppe standard de 196 euros.')
+    st.subheader('Vous avez l\'enveloppe standard de 200 euros.')
     st.write('Pas besoin de venir nous voir :) ')
 elif 2050 < QF <= 2300 :
     st.subheader('Vous avez une enveloppe de 250 euros.')
@@ -86,16 +86,16 @@ else:
 # Afficher un message d'explication si l'utilisateur dépasse l'enveloppe
 if QF < 2300:
     st.subheader('Ceci est le montant total auquel vous avez droit, il inclut')
-    st.write(' - Les demandes de remboursement pour un maximum de 196€')
-    st.write(' - Une carte cadeau du montant de l\'enveloppe auquel est soustrait le montant déjà demandé en remboursement (ici aussi il y a un maximum de 196€)')
-    st.write(' - Une ou plusieurs carte enfant du surplus si le montant maximum est atteint pour la carte cadeau (maximum de 196€ par enfant)')
+    st.write(' - Les demandes de remboursement pour un maximum de 200€')
+    st.write(' - Une carte cadeau du montant de l\'enveloppe auquel est soustrait le montant déjà demandé en remboursement (ici aussi il y a un maximum de 200€)')
+    st.write(' - Une ou plusieurs carte enfant du surplus si le montant maximum est atteint pour la carte cadeau (maximum de 200€ par enfant)')
     st.write(' - Une carte culture du surplus si le montant maximum des cartes cadeaux précédentes est atteint')
     st.write('')
-    st.write('Si vous disposez de plus de l\'enveloppe par défaut de 196€, pour en bénéficier, veuillez apportez votre justificatif (Relevé d\'impots de l\'année précédente) à une permanence de votre CSE ET veuillez ajouter vos éventuels enfants comme ayant droit dans Swile.')
+    st.write('Si vous disposez de plus de l\'enveloppe par défaut de 200€, pour en bénéficier, veuillez apportez votre justificatif (Relevé d\'impots de l\'année précédente) à une permanence de votre CSE ET veuillez ajouter vos éventuels enfants comme ayant droit dans Swile.')
 else: 
     st.subheader('Ceci est le montant total auquel vous avez droit, il inclut')
-    st.write(' - Les demandes de remboursement pour un maximum de 196€')
-    st.write(' - Une carte cadeau du montant de l\'enveloppe, à savoir 196€, auquel est soustrait le montant déjà demandé en remboursement.')
+    st.write(' - Les demandes de remboursement pour un maximum de 200€')
+    st.write(' - Une carte cadeau du montant de l\'enveloppe, à savoir 200€, auquel est soustrait le montant déjà demandé en remboursement.')
 
 
 
